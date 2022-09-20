@@ -15,13 +15,14 @@
         </div>
 
         <div class="ml-auto flex items-center">
-          <button class="flex bg-gray-700 hover:bg-black text-white px-3 py-1 rounded-sm text-sm items-center mr-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" height="16" viewBox="0 0 24 24" width="16">
+          <router-link class="flex bg-gray-700 hover:bg-black text-white px-3 py-1 rounded-sm text-sm items-center mr-2" :to="{name: 'NewBookmarkPage'}">
+             <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" height="16" viewBox="0 0 24 24" width="16">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
             </svg>
             New
-          </button>
+          </router-link>
+          
           <div class="relative group">
             <button class="w-8 h-8 flex items-center justify-center rounded-md transition-colors duration-500 hover:bg-gray-200 group-focus-within:bg-gray-300">
               <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" class="fill-current" width="24">
