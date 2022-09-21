@@ -1,5 +1,12 @@
 {
-  "users": [],
+  "users": [
+    {
+      "fullname": "esma nur bitmez",
+      "username": "esmanur",
+      "password": "83ee0d8e7d3b3a2ea50736b959b74a894043bfee",
+      "id": 1
+    }
+  ],
   "bookmarks": [],
   "categories": []
 }
