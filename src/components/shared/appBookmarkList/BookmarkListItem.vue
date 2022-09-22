@@ -1,8 +1,9 @@
 <template>
-<div class="bg-white flex flex-col gap-x-3 rounded-md shadow-sm">
-    <div class="p-3">
+  
+<div class="bg-white flex  flex-col gap-x-3 rounded-md shadow-sm">
+    <div class="">
       <a href="#" target="_blank"
-        class="hover:text-black font-bold text-l mb-1 text-gray-600 text-center">Vue3 Dokümantasyon</a>
+        class="hover:text-black font-bold mb-1 text-gray-600 text-center">Vue3 Dokümantasyon</a>
       <div class="flex items-center justify-center mt-2 gap-x-1">
         <button  class="like-btn group">
           <svg xmlns="http://www.w3.org/2000/svg" class="fill-current group-hover:text-white" height="24"
@@ -47,5 +48,7 @@ export default {
 }
 </script>
 <style scoped>
-
+.bookmark-item{
+  background-color: white;
+}
 </style>

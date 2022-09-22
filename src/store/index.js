@@ -1,5 +1,8 @@
 import { createStore } from "vuex";
 import createPersistedState from "vuex-persistedstate"
+import SecureLS from "secure-ls"
+
+var ls = new SecureLS({encodingType: 'HmacSHA1'});
 
 
 export default createStore({
@@ -10,6 +13,9 @@ export default createStore({
     mutations: {
         setUser(state,user){
             state.user = user
+        },
+        logout(state){
+            state.user = null
         }
     },
     getters:{
@@ -21,5 +27,14 @@ export default createStore({
         },
         _saltKey : state => state.saltKey
     },
-    plugins:[createPersistedState()]
+    plugins:[
+        createPersistedState({
+            key : "bookmarkUser",
+            storage: {
+              getItem: (key) => ls.get(key),
+              setItem: (key, value) => ls.set(key, value),
+              removeItem: (key) => ls.remove(key),
+            },
+          }),
+    ]
 })

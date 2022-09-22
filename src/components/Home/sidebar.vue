@@ -40,5 +40,10 @@ export default {
 </script>
 
 <style scoped>
-
+.sidebar{
+  background-color: #222831;
+}
+.sidebar-item{
+  background-color: #222831;
+}
 </style>
