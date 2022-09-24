@@ -7,6 +7,40 @@
       "id": 1
     }
   ],
-  "bookmarks": [],
-  "categories": []
+  "bookmarks": [
+    {
+      "title": "Frontend Dünyası",
+      "url": "https://www.youtube.com/",
+      "categoryId": "category.id",
+      "description": "çok güzel bir kaynak",
+      "createdAt": "2022-09-24T12:30:46.659Z",
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "name": "Vue.js",
+      "id": 1
+    },
+    {
+      "name": "React.js",
+      "id": 2
+    },
+    {
+      "name": "Frontend",
+      "id": 3
+    },
+    {
+      "name": "Backend",
+      "id": 4
+    },
+    {
+      "name": "Cloud",
+      "id": 5
+    },
+    {
+      "name": "Sosyal Yaşam",
+      "id": 6
+    }
+  ]
 }

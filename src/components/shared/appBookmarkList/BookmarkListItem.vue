@@ -38,7 +38,7 @@
         <span>{{ createdAt }}</span>
       </div>
     </div>
-    <div class="bg-red-200 p-1 text-red-900 text-center text-sm">Vue.js</div>
+    <div class="card p-1 text-red-900 text-center text-sm">Vue.js</div>
   </div>
 </template>
 
@@ -50,5 +50,8 @@ export default {
 <style scoped>
 .bookmark-item{
   background-color: white;
+}
+.card{
+  background-color: #FFD369;
 }
 </style>
