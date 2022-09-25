@@ -5,16 +5,47 @@
       "username": "esmanur",
       "password": "83ee0d8e7d3b3a2ea50736b959b74a894043bfee",
       "id": 1
+    },
+    {
+      "username": "esma",
+      "fullname": "esma",
+      "password": "83ee0d8e7d3b3a2ea50736b959b74a894043bfee",
+      "id": 2
+    },
+    {
+      "fullname": "Ahmet Tayyip Uzun",
+      "username": "tayyip",
+      "password": "83ee0d8e7d3b3a2ea50736b959b74a894043bfee",
+      "id": 3
     }
   ],
   "bookmarks": [
     {
       "title": "Frontend Dünyası",
-      "url": "https://www.youtube.com/",
-      "categoryId": "category.id",
-      "description": "çok güzel bir kaynak",
-      "createdAt": "2022-09-24T12:30:46.659Z",
+      "url": "https://www.youtube.com/watch?v=EF6vmq0Fk4o&t=1948s",
+      "categoryId": 3,
+      "description": "dvfdvfbfbfgb",
+      "userId": 1,
+      "created_at": "2022-09-25T12:19:38.065Z",
       "id": 1
+    },
+    {
+      "title": "Foroğraf",
+      "url": "dsvsdvdsv",
+      "categoryId": 6,
+      "description": "sdvdvd",
+      "userId": 1,
+      "created_at": "2022-09-25T12:22:43.296Z",
+      "id": 2
+    },
+    {
+      "title": "deneme",
+      "url": "https://www.w3schools.com/cpp/cpp_functions.asp",
+      "categoryId": 4,
+      "description": "v fdvvfdvdfvdv",
+      "userId": 3,
+      "created_at": "2022-09-25T12:31:32.665Z",
+      "id": 3
     }
   ],
   "categories": [

@@ -5,7 +5,7 @@
       <input v-model="userData.url" type="text" placeholder="URL" class="input mb-3" />
       <select v-model="userData.categoryId" class="input mb-3">
         <option disabled value="" selected>Kategori</option>
-        <option v-for="category in categoryList" :key="category.id" value="category.id">{{category.name}}</option>
+        <option v-for="category in categoryList" :key="category.id" :value="category.id">{{category.name}}</option>
       </select>
       <textarea v-model="userData.description" placeholder="Açıklama" class="input mb-3" cols="30" rows="10"></textarea>
       <div class="flex items-center justify-end gap-x-1">
@@ -43,13 +43,14 @@ export default {
     
     onSave(){
       const saveData = {
-        ...this.userData,
-        userId : this.getCurrentUser?.id,
-        createdAt: new Date()
-      }
-      this.$appAxios.post("/bookmarks",saveData).then(save_bookmark_response => {
-        console.log(save_bookmark_response)
-        Object.keys(this.userData)?.forEach(field => this.userData[field] = null)
+          ...this.userData,
+          userId: this._getCurrentUser?.id,
+          created_at : new Date()
+        }
+      this.$appAxios.post('bookmarks',saveData).then((res)=>{
+        console.log(res)
+        Object.keys(this.userData)?.forEach(field =>(this.userData[field]=null));
+        this.$router.push({name: "HomePage"})
       })
     }
   },
