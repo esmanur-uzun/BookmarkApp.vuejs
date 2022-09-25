@@ -25,6 +25,9 @@ export default createStore({
             delete user?.password
             return user
         },
+        _userLikes: state => state.user?.likes || [],
+        _userBookmarks : state => state?.bookmarks || [],
+        _currentUserId: state => state?.user?.id,
         _saltKey : state => state.saltKey
     },
     plugins:[

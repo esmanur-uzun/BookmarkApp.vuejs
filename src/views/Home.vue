@@ -24,7 +24,7 @@ export default {
     })
     
   },
-  methosd:{
+  methods:{
     updateBookmarkList(categoryId){
       const url = categoryId ? `/bookmarks?_expand=category&_expand=user&categoryId=${categoryId}` : `/bookmarks?_expand=category&_expand=user`
       this.$appAxios.get(url).then((res)=>{
