@@ -5,7 +5,6 @@
       "username": "esmanur",
       "password": "83ee0d8e7d3b3a2ea50736b959b74a894043bfee",
       "id": 1
-      
     },
     {
       "username": "esma",
@@ -17,7 +16,10 @@
       "fullname": "Ahmet Tayyip Uzun",
       "username": "tayyip",
       "password": "83ee0d8e7d3b3a2ea50736b959b74a894043bfee",
-      "id": 3
+      "id": 3,
+      "likes": [
+        2
+      ]
     }
   ],
   "bookmarks": [
@@ -74,5 +76,6 @@
       "name": "Sosyal Yaşam",
       "id": 6
     }
-  ]
+  ],
+  "likes": []
 }

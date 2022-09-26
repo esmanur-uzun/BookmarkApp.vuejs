@@ -52,8 +52,10 @@ export default {
     likeItem(){
 
       const likes =[...this._userLikes,this.item.id] 
+      
       this.$appAxios.patch(`/users/${this._getCurrentUser.id }`,{likes}).then(like_res =>{
         console.log(like_res)
+        this.$store.commit("updateLikes",this.item.id)
       })
     }
   },
@@ -64,7 +66,7 @@ export default {
     userName(){
       return this.item?.user?.fullname || "-"
     },
-    ...mapGetters(["_getCurrentUserId ","_userLikes"])
+    ...mapGetters(["_getCurrentUser","_userLikes"])
   }
 }
 </script>

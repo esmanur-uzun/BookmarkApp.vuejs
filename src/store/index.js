@@ -16,6 +16,9 @@ export default createStore({
         },
         logout(state){
             state.user = null
+        },
+        updateLikes(state,bookmarkId){
+            state.user.likes.push(bookmarkId)
         }
     },
     getters:{
